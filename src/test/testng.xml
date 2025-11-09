@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="CalculatorSuite" parallel="classes" thread-count="8">
+    <test name="CalculatorTests">
+        <classes>
+            <class name="tests.CalculatorCosTest"/>
+            <class name="tests.CalculatorCtgTest"/>
+            <class name="tests.CalculatorDivDoubleTest"/>
+            <class name="tests.CalculatorDivLongTest"/>
+            <class name="tests.CalculatorMultDoubleTest"/>
+            <class name="tests.CalculatorMultLongTest"/>
+            <class name="tests.CalculatorNegativeTest"/>
+            <class name="tests.CalculatorPositiveTest"/>
+            <class name="tests.CalculatorPowTest"/>
+            <class name="tests.CalculatorSinTest"/>
+            <class name="tests.CalculatorSqrtTest"/>
+            <class name="tests.CalculatorSubDoubleTest"/>
+            <class name="tests.CalculatorSubLongTest"/>
+            <class name="tests.CalculatorSumDoubleTest"/>
+            <class name="tests.CalculatorSumLongTest"/>
+            <class name="tests.CalculatorTgTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,16 +1,11 @@
-import com.epam.tat.module4.Calculator;
+package tests;
+
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import templates.BaseClass;
+import templates.TestDataProvider;
 
-public class CalculatorMultLongTest {
-
-    public Calculator calc;
-
-    @BeforeClass
-    public void setup() {
-        calc = new Calculator();
-    }
+public class CalculatorMultLongTest extends BaseClass {
 
     @Test(dataProvider = "multiplicationDataLong",
             dataProviderClass = TestDataProvider.class,

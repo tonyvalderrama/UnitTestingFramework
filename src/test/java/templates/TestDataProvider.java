@@ -1,3 +1,5 @@
+package templates;
+
 import org.testng.annotations.DataProvider;
 
 import java.io.BufferedReader;
@@ -5,6 +7,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class TestDataProvider {
 
@@ -143,5 +146,45 @@ public class TestDataProvider {
     @DataProvider
     public Object[][] sqrtData() throws IOException {
         return csvFileToObj2Columns("sqrtData");
+    }
+
+    @DataProvider
+    public Object[][] tgData() throws IOException {
+        return csvFileToObj2Columns("tanData");
+    }
+
+    @DataProvider
+    public Object[][] sinData() throws IOException {
+        return csvFileToObj2Columns("sineData");
+    }
+
+    @DataProvider
+    public Object[][] cosData() throws IOException {
+        return csvFileToObj2Columns("cosData");
+    }
+
+    @DataProvider
+    public Object[][] ctgData() throws IOException {
+        return csvFileToObj2Columns("ctgData");
+    }
+
+    @DataProvider
+    public Object[][] positiveNumbers() {
+        Random rand = new Random();
+        Long[][] intValues = new Long[10][1];
+        for (int i=0;i<10;i++) {
+            intValues[i][0] = (long) rand.nextInt(15) + 1;
+        }
+        return intValues;
+    }
+
+    @DataProvider
+    public Object[][] negativeNumbers() {
+        Random rand = new Random();
+        Long[][] intValues = new Long[10][1];
+        for (int i=0;i<10;i++) {
+            intValues[i][0] = (long) -rand.nextInt(15) - 1;
+        }
+        return intValues;
     }
 }

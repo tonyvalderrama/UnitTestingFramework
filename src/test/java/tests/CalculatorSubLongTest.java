@@ -1,17 +1,11 @@
+package tests;
+
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import com.epam.tat.module4.Calculator;
+import templates.BaseClass;
+import templates.TestDataProvider;
 
-public class CalculatorSumLongTest {
-
-    public Calculator calc;
-
-    @BeforeClass
-    public void setup() {
-        calc = new Calculator();
-    }
+public class CalculatorSubLongTest extends BaseClass {
 
     @Test(dataProvider = "sumDataLong",
             dataProviderClass = TestDataProvider.class,

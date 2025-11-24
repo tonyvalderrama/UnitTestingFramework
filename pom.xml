@@ -15,10 +15,17 @@
     </properties>
 
     <dependencies>
+        <!-- TestNG -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.11.0</version>
+        </dependency>
+        <!-- Calculator.jar file -->
+        <dependency>
+                <groupId>com.epam.tat</groupId>
+                <artifactId>calculator</artifactId>
+                <version>1.0</version>
         </dependency>
     </dependencies>
 

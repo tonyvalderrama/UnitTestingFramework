@@ -1,11 +1,10 @@
-package tests;
+package com.epam.tat.module4.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import templates.BaseClass;
-import templates.TestDataProvider;
+import com.epam.tat.module4.dataservices.TestDataProvider;
 
-public class CalculatorNegativeTest extends BaseClass {
+public class CalculatorNegativeTest extends BaseTest {
 
     @Test(dataProvider = "positiveNumbers",
             dataProviderClass = TestDataProvider.class,

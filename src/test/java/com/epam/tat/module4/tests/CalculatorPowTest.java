@@ -1,11 +1,10 @@
-package tests;
+package com.epam.tat.module4.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import templates.BaseClass;
-import templates.TestDataProvider;
+import com.epam.tat.module4.dataservices.TestDataProvider;
 
-public class CalculatorPowTest extends BaseClass {
+public class CalculatorPowTest extends BaseTest {
 
     @Test(dataProvider = "powData",
             dataProviderClass = TestDataProvider.class,

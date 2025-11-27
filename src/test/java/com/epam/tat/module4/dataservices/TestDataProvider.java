@@ -1,4 +1,4 @@
-package templates;
+package com.epam.tat.module4.dataservices;
 
 import org.testng.annotations.DataProvider;
 

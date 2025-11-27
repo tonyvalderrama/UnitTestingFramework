@@ -1,11 +1,10 @@
-package tests;
+package com.epam.tat.module4.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import templates.BaseClass;
-import templates.TestDataProvider;
+import com.epam.tat.module4.dataservices.TestDataProvider;
 
-public class CalculatorCosTest extends BaseClass {
+public class CalculatorCosTest extends BaseTest {
     @Test(dataProvider = "cosData",
             dataProviderClass = TestDataProvider.class,
             testName = "Testing calculating cosine")

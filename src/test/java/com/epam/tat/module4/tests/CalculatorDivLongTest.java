@@ -1,11 +1,10 @@
-package tests;
+package com.epam.tat.module4.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import templates.BaseClass;
-import templates.TestDataProvider;
+import com.epam.tat.module4.dataservices.TestDataProvider;
 
-public class CalculatorDivLongTest extends BaseClass {
+public class CalculatorDivLongTest extends BaseTest {
 
     @Test(dataProvider = "divisionDataLong",
             dataProviderClass = TestDataProvider.class,
